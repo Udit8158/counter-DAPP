@@ -1,5 +1,5 @@
 import "./App.css";
-import { decriment, getCount, incriment } from "./web3_client";
+import { decriment, getCount, incriment, selectedAcount } from "./web3_client";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Hello {selectedAcount}</h1>
       <h1>Count: {count}</h1>
       <button onClick={incrimentCount}>Incriment</button>
       <button onClick={decrimentCount}>Decriment</button>
